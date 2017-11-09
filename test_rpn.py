@@ -9,4 +9,7 @@ class TestBasics(unittest.TestCase):
 	def test_subtract(self):
 		result = rpn.calculate('2 1 -')
 		self.assertEqual(1, result)	
-
+	
+	def test_exponentiation(self):
+		result = rpn.calculate('2 2 ^')
+		self.assertEqual(4, result)
